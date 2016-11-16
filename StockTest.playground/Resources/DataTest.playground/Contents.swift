@@ -16,5 +16,4 @@ var TSLA = [
     "10/7/16": 19661
 ]
 
-
-
+//Add a pull from yahoo, look at SwiftStock
