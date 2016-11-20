@@ -224,9 +224,11 @@ var timeCheck = function (lsPercent){
 }
 //alert(timeCheck(inputTime))
 
-for(var i = 1; i<=100; i++){
+var test = 0;
+
+for(var i = 1; i<=10000; i++){
 		//alert(i)
-		var thisSpeed = timeCheck(i);
+		var thisSpeed = timeCheck(test);
     //alert(thisSpeed);
     data.addRows([
     	[i,thisSpeed]
@@ -234,6 +236,7 @@ for(var i = 1; i<=100; i++){
     if(i == inputTime){
         finalDilation = thisSpeed;
     }
+    test = test+0.01
 }
 
 var timeCheck = function (lsPercent){
